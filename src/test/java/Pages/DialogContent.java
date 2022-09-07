@@ -23,15 +23,6 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "(//span[contains(text(), 'Dashboard')])[2]")
     public WebElement dashboard;
 
-    @FindBy(xpath="//ms-add-button[contains(@tooltip,'TITLE.ADD')]//button")
-    private WebElement addButton;
-
-    @FindBy(xpath="//ms-text-field[@formcontrolname='name']//input")
-    private WebElement nameInput;
-
-    @FindBy(xpath="//ms-text-field[@formcontrolname='code']//input")
-    private WebElement codeInput;
-
     @FindBy(xpath="//ms-save-button//button")
     private WebElement saveButton;
 
@@ -41,8 +32,56 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "(//button[@class='consent-give'])[1]")
     private WebElement acceptCookies;
 
-    @FindBy(xpath = "//ms-text-field[@formcontrolname='shortName']//input")
+    @FindBy(xpath="//ms-add-button[contains(@tooltip,'TITLE.ADD')]//button")
+    private WebElement addButton;
+
+    @FindBy(xpath="//ms-text-field[@formcontrolname='name']//input")
+    private WebElement nameInput;
+
+    @FindBy(xpath="//ms-text-field[@formcontrolname='shortName']//input")
     private WebElement shortName;
+
+    @FindBy(xpath="//ms-text-field[@formcontrolname='order']//input")
+    private WebElement order;
+
+    @FindBy(xpath = "(//span[text()='Next Grade'])[1]")
+    private WebElement nextGrade;
+
+    @FindBy(xpath = "//span[text()='None']")
+    private WebElement none;
+
+    @FindBy(xpath="(//td[contains(text(),'Ciaro')]//following::div/ms-edit-button)[1]")
+    private WebElement editCiaro;
+
+    @FindBy(xpath="(//td[contains(text(),'Ciaro')]//following::div/ms-delete-button)[1]")
+    private WebElement deleteCiaro;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @FindBy(xpath="//ms-text-field[@formcontrolname='code']//input")
+    private WebElement codeInput;
+
+
+
+
 
     @FindBy(xpath = "//div[contains(text(),'already')]")
     private WebElement alreadyExist;
@@ -108,8 +147,15 @@ public class DialogContent extends Parent {
             case "username": myElement = username; break;
             case "password": myElement = password; break;
             case "nameInput": myElement = nameInput; break;
-            case "codeInput": myElement = codeInput; break;
             case "shortName": myElement = shortName; break;
+            case "order": myElement = order; break;
+
+
+
+
+
+            case "codeInput": myElement = codeInput; break;
+
             case "searchInput": myElement = searchInput; break;
             case "integrationCode": myElement = integrationCode; break;
             case "priority": myElement = priority; break;
@@ -132,10 +178,19 @@ public class DialogContent extends Parent {
             case "addButton" : myElement = addButton; break;
             case "saveButton" : myElement = saveButton; break;
             case "acceptCookies" : myElement = acceptCookies; break;
+            case "nextGrade": myElement = nextGrade;  break;
+            case "none": myElement = none;  break;
+            case "editCiaro" : myElement = editCiaro; break;
+            case "deleteCiaro" : myElement = deleteCiaro; break;
+            case "deleteDialogButton" : myElement =deleteDialogButton; break;
+
+
+
+
             case "closeDialog" : myElement =closeDialog; break;
             case "searchButton" : myElement = searchButton; break;
             case "deleteButton" : myElement = deleteButton; break;
-            case "deleteDialogButton" : myElement =deleteDialogButton; break;
+
             case "india" : myElement =india; break;
             case "closeDialogBtn" : myElement =closeDialogBtn; break;
 

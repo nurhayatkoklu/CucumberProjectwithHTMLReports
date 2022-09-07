@@ -11,6 +11,16 @@ public class FormContent extends Parent {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
+
+
+
+
+
+
+
+
+
+
     @FindBy(xpath = "(//span[text()='Academic Period'])[1]")
     private WebElement academicPeriod;
 
@@ -84,6 +94,15 @@ public class FormContent extends Parent {
 
     public void findAndClick(String strElement) {
         switch (strElement) {
+
+
+
+
+
+
+
+
+
             case "academicPeriod": myElement = academicPeriod;  break;
             case "AcademicPeriodOption1": myElement = AcademicPeriodOption1; break;
             case "AcademicPeriodOption2": myElement = AcademicPeriodOption2; break;
