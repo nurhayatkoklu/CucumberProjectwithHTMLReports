@@ -56,87 +56,32 @@ public class DialogContent extends Parent {
     @FindBy(xpath="(//td[contains(text(),'Ciaro')]//following::div/ms-delete-button)[1]")
     private WebElement deleteCiaro;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath="//ms-text-field[@formcontrolname='description']//input")
+    private WebElement description;
 
     @FindBy(xpath="//ms-text-field[@formcontrolname='code']//input")
-    private WebElement codeInput;
+    private WebElement integrationCode;
 
-
-
-
-
-    @FindBy(xpath = "//div[contains(text(),'already')]")
-    private WebElement alreadyExist;
-
-    @FindBy(xpath = "//*[@id='ms-text-field-0']")
-    private WebElement searchBox;
-
-    @FindBy(xpath = "//button[@aria-label='Close dialog']")
-    private WebElement closeDialog;
-
-    @FindBy(xpath = "//button[@aria-label='Close']")
-    private WebElement closeDialogBtn;
+    @FindBy(xpath="//ms-integer-field[@formcontrolname='priority']//input")
+    private WebElement priority;
 
     @FindBy(xpath = "(//div[contains(@class,'mat-form-field-infix ng-tns-c74')]//input)[1]")
     private WebElement searchInput;
 
+    @FindBy(xpath = "//ms-text-field[@placeholder='DISCOUNT.TITLE.DESCRIPTION']//input")
+    private WebElement descriptionSearch;
+
     @FindBy(xpath = "//ms-search-button//button")
     private WebElement searchButton;
+
+    @FindBy(xpath = "//ms-edit-button//button")
+    private WebElement editButton;
 
     @FindBy(xpath = "//ms-delete-button//button")
     private WebElement deleteButton;
 
     @FindBy(xpath = "//span[contains(text(),'Delete')]")
     private WebElement deleteDialogButton;
-
-    @FindBy(xpath="//ms-text-field[@formcontrolname='budgetAccountIntegrationCode']//input")
-    private WebElement integrationCode;
-
-    @FindBy(xpath="//ms-integer-field[@formcontrolname='priority']//input")
-    private WebElement priority;
-
-    @FindBy(xpath = "//ms-text-field[@formcontrolname='firstName']//input")
-    private WebElement firstNameInput;
-
-    @FindBy(xpath = "//ms-text-field[@formcontrolname='lastName']//input")
-    private WebElement lastNameInput;
-
-    @FindBy(xpath = "//*[@data-placeholder='Employee ID']")
-    private WebElement employeeID;
-
-    @FindBy(xpath = "//*[@data-placeholder='Document Number']")
-    private WebElement documentNumber;
-
-    @FindBy(xpath = "//*[@data-placeholder='Country']")
-    private WebElement country;
-
-    @FindBy(xpath = "//span[text()='India']")
-    private WebElement india;
-
-    @FindBy(css = "[placeholder='GENERAL.FIELD.FIRST_NAME'] input")
-    private WebElement firstNameSearch;
-
-    @FindBy(css = "[placeholder='GENERAL.FIELD.LAST_NAME'] input")
-    private WebElement lastNameSearch;
-
 
 
     WebElement myElement;
@@ -149,25 +94,11 @@ public class DialogContent extends Parent {
             case "nameInput": myElement = nameInput; break;
             case "shortName": myElement = shortName; break;
             case "order": myElement = order; break;
-
-
-
-
-
-            case "codeInput": myElement = codeInput; break;
-
-            case "searchInput": myElement = searchInput; break;
+            case "description": myElement = description; break;
             case "integrationCode": myElement = integrationCode; break;
             case "priority": myElement = priority; break;
-            case "firstNameInput": myElement = firstNameInput; break;
-            case "lastNameInput": myElement = lastNameInput; break;
-            case "employeeID": myElement = employeeID; break;
-            case "documentNumber": myElement = documentNumber; break;
-            case "country": myElement = country; break;
-            case "firstNameSearch": myElement = firstNameSearch; break;
-            case "lastNameSearch": myElement = lastNameSearch; break;
-
-
+            case "searchInput": myElement = searchInput; break;
+            case "descriptionSearch": myElement = descriptionSearch; break;
 
         }
         sendKeysFunction(myElement, value);
@@ -182,20 +113,10 @@ public class DialogContent extends Parent {
             case "none": myElement = none;  break;
             case "editCiaro" : myElement = editCiaro; break;
             case "deleteCiaro" : myElement = deleteCiaro; break;
-            case "deleteDialogButton" : myElement =deleteDialogButton; break;
-
-
-
-
-            case "closeDialog" : myElement =closeDialog; break;
             case "searchButton" : myElement = searchButton; break;
+            case "editButton" : myElement = editButton; break;
             case "deleteButton" : myElement = deleteButton; break;
-
-            case "india" : myElement =india; break;
-            case "closeDialogBtn" : myElement =closeDialogBtn; break;
-
-
-
+            case "deleteDialogButton" : myElement =deleteDialogButton; break;
 
         }
         clickFunction(myElement);
@@ -205,7 +126,6 @@ public class DialogContent extends Parent {
         switch (strElement) {
             case "dashboard" : myElement = dashboard; break;
             case "successMessage" : myElement = successMessage; break;
-            case "alreadyExist" : myElement =alreadyExist; break;
         }
         verifyContainsText(myElement, text);
     }

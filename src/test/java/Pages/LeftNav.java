@@ -20,44 +20,11 @@ public class LeftNav extends Parent {
         @FindBy(xpath = "//span[text()='Grade Levels']")
         private WebElement gradeLevels;
 
+        @FindBy(xpath = "//span[text()='Discounts']")
+        private WebElement discounts;
 
-
-
-
-
-
-
-
-
-
-
-        @FindBy(xpath = "//span[text()='Countries']")
-        private WebElement countries;
-
-        @FindBy(xpath = "//span[text()='Citizenships']")
-        private WebElement citizenShip;
-
-        @FindBy(xpath = "//span[text()='Nationalities']")
-        private WebElement nationalities;
-
-        @FindBy(xpath = "//span[text()='Fees']")
-        private WebElement fees;
-
-        @FindBy(xpath="(//span[text()='Entrance Exams'])[1]")
-        private WebElement entranceExamsOne;
-
-        @FindBy(xpath="(//span[text()='Setup'])[2]")
-        private WebElement setupTwo;
-
-        @FindBy(xpath="(//span[text()='Entrance Exams'])[2]")
-        private WebElement entranceExamsTwo;
-
-    @FindBy(xpath="//span[text()='Human Resources']")
-    private WebElement humanResources;
-
-    @FindBy(xpath="//span[text()='Employees']")
-    private WebElement employees;
-
+    @FindBy(xpath = "//span[text()='Nationalities']")
+    private WebElement nationalities;
 
 
         WebElement myElement;
@@ -68,19 +35,9 @@ public class LeftNav extends Parent {
                 case "setupOne" : myElement =setupOne; break;
                 case "parameters" : myElement =parameters; break;
                 case "gradeLevels" : myElement =gradeLevels; break;
-
-
-
-
-                case "countries" : myElement = countries; break;
-                case "citizenShip" : myElement =citizenShip; break;
+                case "discounts" : myElement =discounts; break;
                 case "nationalities" : myElement =nationalities; break;
-                case "fees" : myElement = fees; break;
-                case "entranceExamsOne" : myElement =entranceExamsOne; break;
-                case "setupTwo" : myElement =setupTwo; break;
-                case "entranceExamsTwo" : myElement = entranceExamsTwo; break;
-                case "humanResources" : myElement =humanResources; break;
-                case "employees" : myElement = employees; break;
+
             }
 
             clickFunction(myElement);
