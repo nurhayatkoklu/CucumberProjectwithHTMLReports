@@ -83,6 +83,14 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//span[contains(text(),'Delete')]")
     private WebElement deleteDialogButton;
 
+    @FindBy(css = "[id='ms-text-field-0']>input")
+    private WebElement nameSearch;
+
+    @FindBy(xpath = "(//td[@class='mat-cell cdk-cell cdk-column-name mat-column-name ng-tns-c328-59 ng-star-inserted'])[1]/text()")
+    private WebElement existCheck;
+
+
+
 
     WebElement myElement;
 
@@ -99,6 +107,7 @@ public class DialogContent extends Parent {
             case "priority": myElement = priority; break;
             case "searchInput": myElement = searchInput; break;
             case "descriptionSearch": myElement = descriptionSearch; break;
+            case "nameSearch": myElement = nameSearch; break;
 
         }
         sendKeysFunction(myElement, value);
@@ -118,6 +127,9 @@ public class DialogContent extends Parent {
             case "deleteButton" : myElement = deleteButton; break;
             case "deleteDialogButton" : myElement =deleteDialogButton; break;
 
+
+
+
         }
         clickFunction(myElement);
     }
@@ -126,6 +138,8 @@ public class DialogContent extends Parent {
         switch (strElement) {
             case "dashboard" : myElement = dashboard; break;
             case "successMessage" : myElement = successMessage; break;
+            case "existCheck" : myElement = existCheck; break;
+
         }
         verifyContainsText(myElement, text);
     }
