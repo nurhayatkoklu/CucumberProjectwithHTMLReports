@@ -23,7 +23,7 @@ Feature: Discounts Functionality
    And Click on the element in Dialog Content
      | saveButton |
 
-   And Success message should be displayed
+   Then Success message should be displayed
 
    Examples:
      | Description | IntegrationCode | Priority |
@@ -52,7 +52,7 @@ Feature: Discounts Functionality
    And Click on the element in Dialog Content
      | saveButton |
 
-   And Success message should be displayed
+   Then Success message should be displayed
 
    Examples:
      | Description | IntegrationCode | Priority | DescriptionSearch |
@@ -72,7 +72,7 @@ Feature: Discounts Functionality
       | deleteButton       |
       | deleteDialogButton |
 
-    And Success message should be displayed
+    Then Success message should be displayed
 
     Examples:
       | DescriptionSearch |
