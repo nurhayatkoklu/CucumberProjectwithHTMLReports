@@ -89,6 +89,12 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "(//td[@class='mat-cell cdk-cell cdk-column-name mat-column-name ng-tns-c328-59 ng-star-inserted'])[1]/text()")
     private WebElement existCheck;
 
+    @FindBy(xpath = "//ms-text-field[@placeholder='GENERAL.FIELD.NAME']//input")
+    private WebElement fieldSearch;
+
+    @FindBy(xpath = "//ms-add-button[@tooltip='GENERAL.BUTTON.ADD']")
+    private WebElement fieldsAddButton;
+
 
 
 
@@ -109,6 +115,10 @@ public class DialogContent extends Parent {
             case "searchInput": myElement = searchInput; break;
             case "descriptionSearch": myElement = descriptionSearch; break;
             case "nameSearch": myElement = nameSearch; break;
+            case "fieldSearch": myElement = fieldSearch; break;
+
+
+
 
         }
         sendKeysFunction(myElement, value);
@@ -127,8 +137,7 @@ public class DialogContent extends Parent {
             case "editButton" : myElement = editButton; break;
             case "deleteButton" : myElement = deleteButton; break;
             case "deleteDialogButton" : myElement =deleteDialogButton; break;
-
-
+            case "fieldsAddButton" : myElement =fieldsAddButton; break;
 
 
         }
