@@ -1,6 +1,7 @@
 package Pages;
 
 import Utilities.GWD;
+import io.cucumber.java.zh_cn.假如;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -38,6 +39,14 @@ public class LeftNav extends Parent {
         private WebElement attestations;
 
 
+        @FindBy(xpath = "//span[text()='Document Types']")
+        private WebElement documentTypes;
+
+
+        @FindBy(xpath = "//span[text()='Fields']")
+        private WebElement fields;
+
+
 
         WebElement myElement;
         public void findAndClick(String strElement){  // 2.aşama
@@ -53,6 +62,12 @@ public class LeftNav extends Parent {
                 case "setupThree" : myElement =setupThree; break;
                 case "positions" : myElement = positions; break;
                 case "attestations" : myElement = attestations; break;
+
+                case "documentTypes" : myElement = documentTypes; break;
+
+                case "fields" : myElement = fields; break;
+
+
 
             }
 
