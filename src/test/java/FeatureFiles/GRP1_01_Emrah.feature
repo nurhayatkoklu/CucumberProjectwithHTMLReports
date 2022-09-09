@@ -20,8 +20,6 @@ Feature: Positions Functionality
 
     Then Success message should be displayed
 
-    Then Success message should be displayed
-
 
   Scenario: Edit Exist Position
     And Click on the element in the Left Nav
@@ -41,8 +39,6 @@ Feature: Positions Functionality
 
     Then Success message should be displayed
 
-    Then Success message should be displayed
-
 
   Scenario: Delete Exist Position
     And Click on the element in the Left Nav
@@ -57,9 +53,6 @@ Feature: Positions Functionality
       | deleteDialogButton |
 
     Then Success message should be displayed
-
-    Then Success message should be displayed
-
 
 
 
