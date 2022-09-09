@@ -4,6 +4,7 @@ import Utilities.GWD;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -50,6 +51,11 @@ public class Parent {
     public void waitUntilLoading() {
         WebDriverWait wait=new WebDriverWait(GWD.driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.numberOfElementsToBe(By.cssSelector("fuse-progress-bar > *"), 0));
+    }
+
+    public void clickOutsideFunction() {
+        Actions action = new Actions(GWD.getDriver());
+        action.moveByOffset(0, 0).click().build().perform();
     }
 
 }
