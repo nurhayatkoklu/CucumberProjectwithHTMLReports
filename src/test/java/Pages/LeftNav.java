@@ -38,6 +38,7 @@ public class LeftNav extends Parent {
         private WebElement attestations;
 
 
+
         WebElement myElement;
         public void findAndClick(String strElement){  // 2.aşama
             // burda string isimden weblemente ulaşıcam
