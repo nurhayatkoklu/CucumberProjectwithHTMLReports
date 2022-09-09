@@ -20,7 +20,7 @@ Feature: Nationalities Functionality
     And Click on the element in Dialog Content
       | saveButton |
 
-    And Success message should be displayed
+    Then Success message should be displayed
 
     Examples:
       | NameInput |
@@ -47,7 +47,7 @@ Feature: Nationalities Functionality
     And Click on the element in Dialog Content
       | saveButton |
 
-    And Success message should be displayed
+    Then Success message should be displayed
 
     Examples:
       | SearchInput | NameInput     |
@@ -67,7 +67,7 @@ Feature: Nationalities Functionality
       | deleteButton       |
       | deleteDialogButton |
 
-    And Success message should be displayed
+    Then Success message should be displayed
 
     Examples:
       | SearchInput |

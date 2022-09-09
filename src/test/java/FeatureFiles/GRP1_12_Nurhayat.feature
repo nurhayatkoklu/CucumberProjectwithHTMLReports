@@ -27,7 +27,7 @@ Feature: Grade Levels Functionality
     And Click on the element in Dialog Content
       | saveButton |
 
-    And Success message should be displayed
+    Then Success message should be displayed
 
     Examples:
       | NameInput | ShortName | Order | NextGrade |
@@ -56,7 +56,7 @@ Feature: Grade Levels Functionality
     And Click on the element in Dialog Content
       | saveButton |
 
-    And Success message should be displayed
+    Then Success message should be displayed
 
     Examples:
       | NameInput | ShortName | Order | NextGrade |
@@ -72,4 +72,4 @@ Feature: Grade Levels Functionality
       | deleteCiaro        |
       | deleteDialogButton |
 
-    And Success message should be displayed
+    Then Success message should be displayed

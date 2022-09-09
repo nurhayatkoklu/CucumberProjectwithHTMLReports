@@ -91,8 +91,16 @@ public class DialogContent extends Parent {
 
     @FindBy(xpath = "(//span[text()='Stage'])[3]")
     private WebElement stage;
+    
     @FindBy(xpath = "//span[text()=' Employment ']")
     private WebElement employment;
+
+    @FindBy(xpath = "//ms-text-field[@placeholder='GENERAL.FIELD.NAME']//input")
+    private WebElement fieldSearch;
+
+    @FindBy(xpath = "//ms-add-button[@tooltip='GENERAL.BUTTON.ADD']")
+    private WebElement fieldsAddButton;
+
 
 
 
@@ -113,7 +121,14 @@ public class DialogContent extends Parent {
             case "priority": myElement = priority; break;
             case "searchInput": myElement = searchInput; break;
             case "descriptionSearch": myElement = descriptionSearch; break;
+
             case "nameSearch" : myElement = nameSearch; break;
+            case "nameSearch": myElement = nameSearch; break;
+            case "fieldSearch": myElement = fieldSearch; break;
+
+
+
+
 
         }
         sendKeysFunction(myElement, value);
@@ -132,9 +147,13 @@ public class DialogContent extends Parent {
             case "editButton" : myElement = editButton; break;
             case "deleteButton" : myElement = deleteButton; break;
             case "deleteDialogButton" : myElement =deleteDialogButton; break;
+
             case "stage" : myElement = stage; break;
             case "employment" : myElement = employment; break;
             case "nameInput" : myElement = nameInput; break;
+
+=======
+            case "fieldsAddButton" : myElement =fieldsAddButton; break;
 
 
 

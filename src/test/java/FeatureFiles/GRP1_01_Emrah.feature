@@ -17,7 +17,11 @@ Feature: Positions Functionality
       | shortName | test123 |
     And Click on the element in Dialog Content
       | saveButton |
-    And Success message should be displayed
+
+    Then Success message should be displayed
+
+    Then Success message should be displayed
+
 
   Scenario: Edit Exist Position
     And Click on the element in the Left Nav
@@ -34,7 +38,11 @@ Feature: Positions Functionality
       | shortName | test1234 |
     And Click on the element in Dialog Content
       | saveButton |
-    And Success message should be displayed
+
+    Then Success message should be displayed
+
+    Then Success message should be displayed
+
 
   Scenario: Delete Exist Position
     And Click on the element in the Left Nav
@@ -47,7 +55,11 @@ Feature: Positions Functionality
       | searchButton       |
       | deleteButton       |
       | deleteDialogButton |
-    And Success message should be displayed
+
+    Then Success message should be displayed
+
+    Then Success message should be displayed
+
 
 
 
