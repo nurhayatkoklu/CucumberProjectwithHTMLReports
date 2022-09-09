@@ -89,6 +89,11 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "(//td[@class='mat-cell cdk-cell cdk-column-name mat-column-name ng-tns-c328-59 ng-star-inserted'])[1]/text()")
     private WebElement existCheck;
 
+    @FindBy(xpath = "(//span[text()='Stage'])[3]")
+    private WebElement stage;
+    @FindBy(xpath = "//span[text()=' Employment ']")
+    private WebElement employment;
+
 
 
 
@@ -108,7 +113,7 @@ public class DialogContent extends Parent {
             case "priority": myElement = priority; break;
             case "searchInput": myElement = searchInput; break;
             case "descriptionSearch": myElement = descriptionSearch; break;
-            case "nameSearch": myElement = nameSearch; break;
+            case "nameSearch" : myElement = nameSearch; break;
 
         }
         sendKeysFunction(myElement, value);
@@ -127,7 +132,9 @@ public class DialogContent extends Parent {
             case "editButton" : myElement = editButton; break;
             case "deleteButton" : myElement = deleteButton; break;
             case "deleteDialogButton" : myElement =deleteDialogButton; break;
-
+            case "stage" : myElement = stage; break;
+            case "employment" : myElement = employment; break;
+            case "nameInput" : myElement = nameInput; break;
 
 
 
@@ -152,6 +159,9 @@ public class DialogContent extends Parent {
         waitUntilLoading();
         findAndClick("deleteButton");
         findAndClick("deleteDialogButton");
+    }
+    public void clickOutside(){
+        clickOutsideFunction();
     }
 
 }
