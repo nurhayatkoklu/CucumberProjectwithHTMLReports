@@ -23,7 +23,7 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "(//span[contains(text(), 'Dashboard')])[2]")
     public WebElement dashboard;
 
-    @FindBy(xpath="//ms-save-button//button")
+    @FindBy(xpath="//ms-save-button/button")
     private WebElement saveButton;
 
     @FindBy(xpath = "//div[contains(text(),'successfully')]")
@@ -74,7 +74,7 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//ms-search-button//button")
     private WebElement searchButton;
 
-    @FindBy(xpath = "//ms-edit-button//button")
+    @FindBy(xpath = "//ms-edit-button/button")
     private WebElement editButton;
 
     @FindBy(xpath = "//ms-delete-button//button")
@@ -101,6 +101,34 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//ms-add-button[@tooltip='GENERAL.BUTTON.ADD']")
     private WebElement fieldsAddButton;
 
+    @FindBy(xpath = "//ms-integer-field/input")
+    private WebElement capacity;
+
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='code']/input")
+    private WebElement code;
+
+    @FindBy (xpath = "//ms-masked-text-field/input[@data-placeholder='IBAN']")
+    private WebElement IBAN;
+
+    @FindBy(xpath = "(//span[text()='Currency'])[3]")
+    private WebElement currency;
+
+    @FindBy(xpath ="(//mat-option[@role='option'])[4]")
+    private WebElement TRY;
+
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='integrationCode']/input")
+    private WebElement bankCode;
+
+    @FindBy(xpath = "//ms-text-field[@placeholder='GENERAL.FIELD.NAME']/input")
+    private WebElement bankSearch;
+
+    @FindBy(xpath="//ms-text-field[@formcontrolname='name']//input")
+    private WebElement nameInputBank;
+
+
+
+
+
 
 
 
@@ -121,8 +149,15 @@ public class DialogContent extends Parent {
             case "priority": myElement = priority; break;
             case "searchInput": myElement = searchInput; break;
             case "descriptionSearch": myElement = descriptionSearch; break;
-            case "nameSearch" : myElement = nameSearch; break;
+            case "nameSearch": myElement = nameSearch; break;
             case "fieldSearch": myElement = fieldSearch; break;
+            case "capacity":myElement=capacity;break;
+            case "code":myElement=code;break;
+            case "IBAN":myElement=IBAN;break;
+            case "bankCode":myElement=bankCode;break;
+            case"bankSearch":myElement=bankSearch;break;
+            case"nameInputBank":myElement=nameInputBank;break;
+
         }
         sendKeysFunction(myElement, value);
     }
@@ -140,10 +175,18 @@ public class DialogContent extends Parent {
             case "editButton" : myElement = editButton; break;
             case "deleteButton" : myElement = deleteButton; break;
             case "deleteDialogButton" : myElement =deleteDialogButton; break;
+
             case "stage" : myElement = stage; break;
             case "employment" : myElement = employment; break;
             case "nameInput" : myElement = nameInput; break;
+
             case "fieldsAddButton" : myElement =fieldsAddButton; break;
+            case "currency":myElement=currency;break;
+            case "TRY":myElement=TRY;break;
+
+
+
+
         }
         clickFunction(myElement);
     }
