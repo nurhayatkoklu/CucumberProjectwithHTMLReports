@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.time.LocalDateTime;
+
 public class LeftNav extends Parent {
 
         public LeftNav() {
@@ -46,6 +48,18 @@ public class LeftNav extends Parent {
         @FindBy(xpath = "//span[text()='Fields']")
         private WebElement fields;
 
+        @FindBy(xpath = "//span[text()='School Setup']")
+        private WebElement schoolSetup;
+
+        @FindBy(xpath="//span[text()='Locations']")
+        private WebElement locations;
+
+        @FindBy(xpath="//span[text()='Departments']")
+        private WebElement departments;
+
+        @FindBy(xpath = "//span[text()='Bank Accounts']")
+        private WebElement bankAccount;
+
 
 
         WebElement myElement;
@@ -62,13 +76,12 @@ public class LeftNav extends Parent {
                 case "setupThree" : myElement =setupThree; break;
                 case "positions" : myElement = positions; break;
                 case "attestations" : myElement = attestations; break;
-
                 case "documentTypes" : myElement = documentTypes; break;
-
                 case "fields" : myElement = fields; break;
-
-
-
+                case "schoolSetup" :myElement=schoolSetup;break;
+                case "locations" :myElement= locations;break;
+                case "departments":myElement=departments;break;
+                case "bankAccount":myElement=bankAccount;break;
             }
 
             clickFunction(myElement);
