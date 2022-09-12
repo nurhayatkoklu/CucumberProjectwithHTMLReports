@@ -23,7 +23,7 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "(//span[contains(text(), 'Dashboard')])[2]")
     public WebElement dashboard;
 
-    @FindBy(xpath="//ms-save-button/button")
+    @FindBy(xpath="//ms-save-button//button")
     private WebElement saveButton;
 
     @FindBy(xpath = "//div[contains(text(),'successfully')]")
@@ -74,7 +74,7 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//ms-search-button//button")
     private WebElement searchButton;
 
-    @FindBy(xpath = "//ms-edit-button/button")
+    @FindBy(xpath = "//ms-edit-button//button")
     private WebElement editButton;
 
     @FindBy(xpath = "//ms-delete-button//button")
@@ -130,10 +130,6 @@ public class DialogContent extends Parent {
 
 
 
-
-
-
-
     WebElement myElement;
 
     public void findAndSend(String strElement, String value) {
@@ -158,6 +154,9 @@ public class DialogContent extends Parent {
             case"bankSearch":myElement=bankSearch;break;
             case"nameInputBank":myElement=nameInputBank;break;
 
+
+
+
         }
         sendKeysFunction(myElement, value);
     }
@@ -175,11 +174,9 @@ public class DialogContent extends Parent {
             case "editButton" : myElement = editButton; break;
             case "deleteButton" : myElement = deleteButton; break;
             case "deleteDialogButton" : myElement =deleteDialogButton; break;
-
             case "stage" : myElement = stage; break;
             case "employment" : myElement = employment; break;
             case "nameInput" : myElement = nameInput; break;
-
             case "fieldsAddButton" : myElement =fieldsAddButton; break;
             case "currency":myElement=currency;break;
             case "TRY":myElement=TRY;break;
