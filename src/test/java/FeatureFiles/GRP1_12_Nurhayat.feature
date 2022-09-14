@@ -73,3 +73,5 @@ Feature: Grade Levels Functionality
       | deleteDialogButton |
 
     Then Success message should be displayed
+
+  Scenario Outline: Delete Subject Categories

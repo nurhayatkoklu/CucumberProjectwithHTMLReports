@@ -74,7 +74,7 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//ms-search-button//button")
     private WebElement searchButton;
 
-    @FindBy(xpath = "//ms-edit-button//button")
+    @FindBy(xpath = "(//ms-edit-button//button)[1]")
     private WebElement editButton;
 
     @FindBy(xpath = "//ms-delete-button//button")
@@ -124,6 +124,12 @@ public class DialogContent extends Parent {
 
     @FindBy(xpath="//ms-text-field[@formcontrolname='name']//input")
     private WebElement nameInputBank;
+
+
+
+
+
+
 
 
 
