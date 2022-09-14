@@ -1,39 +1,38 @@
-Feature: Fields Functionality
+Feature: Grade Levels Functionality
 
   Background:
     Given Navigate to basqar
     When Enter username and password and click login button
     Then User should login successfully
 
-  Scenario Outline: Create Fields
-
+  Scenario Outline: Create Human Resources Setup
     And Click on the element in the Left Nav
-      | setupOne   |
-      | parameters |
-      | fields     |
+      | humanResources |
+      | setupThree     |
+      | positions      |
 
     And Click on the element in Dialog Content
-      | fieldsAddButton |
+      | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput       | <nameInput>       |
-      | integrationCode | <integrationCode> |
+
+      | nameInput | <NameInput> |
+      | shortName | <shortName> |
 
     And Click on the element in Dialog Content
       | saveButton |
 
-    And Success message should be displayed
+    Then Success message should be displayed
 
     Examples:
-      | nameInput     | integrationCode |
-      | Stevee Jobsss | CEO11           |
+      | NameInput | shortName |
+      | menemen61 | domates61 |
 
-
-  Scenario Outline: Edit Fields
+  Scenario Outline: Edit Human Resources Setup
     And Click on the element in the Left Nav
-      | setupOne   |
-      | parameters |
-      | fields     |
+      | humanResources |
+      | setupThree     |
+      | positions      |
 
     And User sending the keys in Dialog Content
       | fieldSearch | <fieldSearch> |
@@ -41,38 +40,34 @@ Feature: Fields Functionality
     And Click on the element in Dialog Content
       | searchButton |
       | editButton   |
-
     And User sending the keys in Dialog Content
-      | nameInput       | <nameInput>       |
-      | integrationCode | <integrationCode> |
+
+      | nameInput | <NameInput> |
+      | shortName      | <shortName> |
 
     And Click on the element in Dialog Content
       | saveButton |
 
     Then Success message should be displayed
+
     Examples:
-      | fieldSearch | nameInput        | integrationCode |
-      | Stevee      | Stevee Jobsss111 | CEO1231         |
+      | fieldSearch | NameInput | shortName |
+      | menemen61   | menemen32 | domates32 |
 
-
-  Scenario Outline: Delete Fields
-
+  Scenario Outline: Delete Human Resources Setup
     And Click on the element in the Left Nav
-      | setupOne   |
-      | parameters |
-      | fields     |
+      | humanResources |
+      | setupThree     |
+      | positions      |
 
     And User sending the keys in Dialog Content
       | fieldSearch | <fieldSearch> |
 
     And Click on the element in Dialog Content
       | searchButton       |
-      | deleteButton       |
+      | deleteButton  |
       | deleteDialogButton |
-
-    Then Success message should be displayed
 
     Examples:
       | fieldSearch |
-      | Jobsss111   |
-
+      | menemen32   |
