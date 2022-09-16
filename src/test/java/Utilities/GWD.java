@@ -29,8 +29,8 @@ public class GWD {
     public static WebDriver getDriver() {
 
 
-        Locale.setDefault( new Locale("EN"));
-        System.setProperty("user.language","EN");
+      //  Locale.setDefault( new Locale("EN"));
+      //  System.setProperty("user.language","EN");
 
         Logger.getLogger("").setLevel(Level.SEVERE);
         System.setProperty(org.slf4j.impl.SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "Error");

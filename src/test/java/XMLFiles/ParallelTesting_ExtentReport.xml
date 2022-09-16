@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suit 1"  parallel="tests" thread-count="2">
+<suite name="Suit 1"  parallel="tests" thread-count="1">
 
 
     <!--    <listeners>  https://github.com/extent-framework/extentreports-testng-adapter/issues/14  -->
@@ -8,20 +8,20 @@
     <!--    </listeners>-->
     <!--    https://www.programsbuzz.com/article/cucumber-testng-extent-report-using-adapter bu sayfadaki neden olmadı -->
 
-    <listeners>
-        <listener class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerAdapter"/>
-    </listeners>
+  <!--  <listeners>-->
+  <!--      <listener class-name="com.aventstack.extentreports.testng.listener.ExtentITestListenerAdapter"/>-->
+  <!--  </listeners> -->
 
-    <test name="Test 1">
-        <parameter name="browser" value="firefox"></parameter>
-        <classes>
-            <class name="Runners.TestRunnerParallel_ExtendReport"></class>
-        </classes>
-    </test>
-    <test name="Test 2">
-        <parameter name="browser" value="chrome"></parameter>
-        <classes>
-            <class name="Runners.TestRunnerParallel_ExtendReport"></class>
-        </classes>
-    </test>
-</suite>
+ <!-- <test name="Test 1"> -->
+ <!--     <parameter name="browser" value="firefox"></parameter> -->
+ <!--     <classes>
+ <!--        <class name="Runners.TestRunnerParallel_ExtendReport"></class> -->
+ <!--     </classes>-->
+    <!--  </test> -->
+      <test name="Test 1">
+          <parameter name="browser" value="chrome"></parameter>
+          <classes>
+              <class name="Runners.TestRunnerParallel_ExtendReport"></class>
+          </classes>
+      </test>
+  </suite>
