@@ -5,6 +5,7 @@ Feature: Grade Levels Functionality
     When Enter username and password and click login button
     Then User should login successfully
 
+
   Scenario Outline: Create Subject Categories
     And Click on the element in the Left Nav
       | education         |
@@ -26,7 +27,8 @@ Feature: Grade Levels Functionality
 
     Examples:
       | NameInput | Code      |
-      | oguz1256 | grup14316 |
+      | oguz1256  | grup14316 |
+
 
   Scenario Outline: Edit Subject Categories
     And Click on the element in the Left Nav
@@ -52,8 +54,9 @@ Feature: Grade Levels Functionality
 
 
     Examples:
-      | fieldSearch | NameInput | Code       |
-        | oguz1256   | oguzh4337  | grups12ffaj |
+      | fieldSearch | NameInput | Code        |
+      | oguz1256    | oguzh4337 | grups12ffaj |
+
 
   Scenario Outline: Delete Subject Categories
     And Click on the element in the Left Nav
@@ -68,7 +71,8 @@ Feature: Grade Levels Functionality
       | searchButton       |
       | deleteFieldButton  |
       | deleteDialogButton |
+    Then Success message should be displayed
 
     Examples:
       | nameSearch |
-      | oguzh4337   |
+      | oguzh4337  |

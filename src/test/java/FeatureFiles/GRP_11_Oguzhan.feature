@@ -5,6 +5,7 @@ Feature: Grade Levels Functionality
     When Enter username and password and click login button
     Then User should login successfully
 
+
   Scenario Outline: Create Human Resources Setup
     And Click on the element in the Left Nav
       | humanResources |
@@ -27,6 +28,7 @@ Feature: Grade Levels Functionality
     Examples:
       | NameInput | shortName |
       | menemen61 | domates61 |
+
 
   Scenario Outline: Edit Human Resources Setup
     And Click on the element in the Left Nav
@@ -54,6 +56,7 @@ Feature: Grade Levels Functionality
       | fieldSearch | NameInput | shortName |
       | menemen61   | menemen32 | domates32 |
 
+
   Scenario Outline: Delete Human Resources Setup
     And Click on the element in the Left Nav
       | humanResources |
@@ -67,6 +70,7 @@ Feature: Grade Levels Functionality
       | searchButton       |
       | deleteButton  |
       | deleteDialogButton |
+    Then Success message should be displayed
 
     Examples:
       | fieldSearch |

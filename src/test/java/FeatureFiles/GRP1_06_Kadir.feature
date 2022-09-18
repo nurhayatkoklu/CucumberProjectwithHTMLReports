@@ -5,7 +5,8 @@ Feature: Location Functionality
     When Enter username and password and click login button
     Then User should login successfully
 
-    Scenario: Add new Location
+
+  Scenario: Add new Location
       And Click on the element in the Left Nav
       | setupOne |
       | schoolSetup|
@@ -20,12 +21,14 @@ Feature: Location Functionality
       | saveButton |
       Then Success message should be displayed
 
-    Scenario: Edit new Location
+
+  Scenario: Edit new Location
 
       And Click on the element in the Left Nav
       | setupOne |
       | schoolSetup |
       | locations |
+
       And Click on the element in Dialog Content
       |editButton|
       And User sending the keys in Dialog Content
@@ -34,8 +37,10 @@ Feature: Location Functionality
       | capacity  | 44     |
       And Click on the element in Dialog Content
       | saveButton |
+    Then Success message should be displayed
 
-      Scenario: Delete location
+
+  Scenario: Delete location
         And Click on the element in the Left Nav
           | setupOne |
           | schoolSetup |
@@ -44,4 +49,5 @@ Feature: Location Functionality
           | searchButton|
           | deleteButton|
           | deleteDialogButton|
+    Then Success message should be displayed
 

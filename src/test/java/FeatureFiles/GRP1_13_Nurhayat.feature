@@ -5,6 +5,7 @@ Feature: Nationalities Functionality
     When Enter username and password and click login button
     Then User should login successfully
 
+
   Scenario Outline: Create Nationality
     And Click on the element in the Left Nav
       | setupOne      |
@@ -25,6 +26,7 @@ Feature: Nationalities Functionality
     Examples:
       | NameInput |
       | Marsian   |
+
 
   Scenario Outline: Edit Nationality
 
@@ -52,6 +54,7 @@ Feature: Nationalities Functionality
     Examples:
       | SearchInput | NameInput     |
       | Marsian     | Black Marsian |
+
 
   Scenario Outline: Delete Nationality
     And Click on the element in the Left Nav

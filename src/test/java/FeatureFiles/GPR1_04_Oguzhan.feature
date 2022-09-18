@@ -5,6 +5,8 @@ Feature: Fields Functionality
     When Enter username and password and click login button
     Then User should login successfully
 
+
+
   Scenario Outline: Create Fields
 
     And Click on the element in the Left Nav
@@ -22,14 +24,14 @@ Feature: Fields Functionality
     And Click on the element in Dialog Content
       | saveButton |
 
-    And Success message should be displayed
+    Then Success message should be displayed
 
     Examples:
       | nameInput     | integrationCode |
       | Stevee Jobsss | CEO11           |
 
 
-  Scenario Outline: Edit Fields
+    Scenario Outline: Edit Fields
     And Click on the element in the Left Nav
       | setupOne   |
       | parameters |

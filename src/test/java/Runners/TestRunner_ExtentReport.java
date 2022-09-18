@@ -11,18 +11,12 @@ import org.testng.annotations.Parameters;
 
 
 @CucumberOptions(
-        tags = "@Regression",
+
         features = {"src/test/java/FeatureFiles/"},
         glue = {"StepDefinitions"} )
 @Listeners({ExtentITestListenerClassAdapter.class})
 
 public class TestRunner_ExtentReport extends AbstractTestNGCucumberTests {
-    @Parameters("browser")
-public void beforeClass(String browser)
-{
-    GWD.threadBrowserName.set(browser);
-
-}
 
     @AfterClass
     public static void writeExtentReport() {

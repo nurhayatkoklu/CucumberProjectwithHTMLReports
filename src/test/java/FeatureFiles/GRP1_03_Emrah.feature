@@ -5,6 +5,7 @@ Feature: Document Types Functionality
     When Enter username and password and click login button
     Then User should login successfully
 
+
   Scenario: Add New Document Type
     And Click on the element in the Left Nav
       | setupOne      |
@@ -22,6 +23,7 @@ Feature: Document Types Functionality
       | saveButton |
     Then Success message should be displayed
 
+
   Scenario: Edit Exist Document Type
     And Click on the element in the Left Nav
       | setupOne      |
@@ -37,6 +39,7 @@ Feature: Document Types Functionality
     And Click on the element in Dialog Content
       | saveButton |
     Then Success message should be displayed
+
 
   Scenario: Delete Exist Document Type
     And Click on the element in the Left Nav

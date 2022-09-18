@@ -5,58 +5,59 @@ Feature: Discounts Functionality
     When Enter username and password and click login button
     Then User should login successfully
 
- Scenario Outline: Create Discount
-   And Click on the element in the Left Nav
-     | setupOne   |
-     | parameters |
-     | discounts  |
 
-   And Click on the element in Dialog Content
-     | addButton |
+  Scenario Outline: Create Discount
+    And Click on the element in the Left Nav
+      | setupOne   |
+      | parameters |
+      | discounts  |
 
-   And User sending the keys in Dialog Content
+    And Click on the element in Dialog Content
+      | addButton |
 
-     | description     | <Description>     |
-     | integrationCode | <IntegrationCode> |
-     | priority        | <Priority>        |
+    And User sending the keys in Dialog Content
 
-   And Click on the element in Dialog Content
-     | saveButton |
+      | description     | <Description>     |
+      | integrationCode | <IntegrationCode> |
+      | priority        | <Priority>        |
 
-   Then Success message should be displayed
+    And Click on the element in Dialog Content
+      | saveButton |
 
-   Examples:
-     | Description | IntegrationCode | Priority |
-     | Happy Birthday    | HP    | 10       |
+    Then Success message should be displayed
 
- Scenario Outline: Edit Discount
+    Examples:
+      | Description    | IntegrationCode | Priority |
+      | Happy Birthday | HP              | 10       |
 
-   And Click on the element in the Left Nav
-     | setupOne   |
-     | parameters |
-     | discounts  |
+  Scenario Outline: Edit Discount
 
-   And User sending the keys in Dialog Content
-     | descriptionSearch | <DescriptionSearch> |
+    And Click on the element in the Left Nav
+      | setupOne   |
+      | parameters |
+      | discounts  |
 
-   And Click on the element in Dialog Content
-     | searchButton |
-     | editButton   |
+    And User sending the keys in Dialog Content
+      | descriptionSearch | <DescriptionSearch> |
 
-   And User sending the keys in Dialog Content
+    And Click on the element in Dialog Content
+      | searchButton |
+      | editButton   |
 
-     | description     | <Description>     |
-     | integrationCode | <IntegrationCode> |
-     | priority        | <Priority>        |
+    And User sending the keys in Dialog Content
 
-   And Click on the element in Dialog Content
-     | saveButton |
+      | description     | <Description>     |
+      | integrationCode | <IntegrationCode> |
+      | priority        | <Priority>        |
 
-   Then Success message should be displayed
+    And Click on the element in Dialog Content
+      | saveButton |
 
-   Examples:
-     | Description | IntegrationCode | Priority | DescriptionSearch |
-     | Happy Birtday Discount  | HPD    | 11       | Happy    |
+    Then Success message should be displayed
+
+    Examples:
+      | Description            | IntegrationCode | Priority | DescriptionSearch |
+      | Happy Birtday Discount | HPD             | 11       | Happy             |
 
   Scenario Outline: Delete Discount
     And Click on the element in the Left Nav
@@ -76,4 +77,4 @@ Feature: Discounts Functionality
 
     Examples:
       | DescriptionSearch |
-      | Happy  |
+      | Happy             |

@@ -5,7 +5,8 @@ Feature: Positions Functionality
     When Enter username and password and click login button
     Then User should login successfully
 
-  @Regression
+
+
   Scenario: Add new Position
     And Click on the element in the Left Nav
       | humanResources |
@@ -22,7 +23,6 @@ Feature: Positions Functionality
     Then Success message should be displayed
 
 
-  @Regression
   Scenario: Edit Exist Position
     And Click on the element in the Left Nav
       | humanResources |
@@ -42,7 +42,6 @@ Feature: Positions Functionality
     Then Success message should be displayed
 
 
-  @Regression
   Scenario: Delete Exist Position
     And Click on the element in the Left Nav
       | humanResources |

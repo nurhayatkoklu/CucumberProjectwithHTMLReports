@@ -29,7 +29,6 @@ public class Hooks {
         System.out.println("scenario sonucu="+ scenario.getStatus());
         System.out.println("scenario isFailed ?="+ scenario.isFailed());
 
-        // excele sonuçları yazacağız
 
         LocalDateTime date = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yy HH:ss");
@@ -37,11 +36,11 @@ public class Hooks {
         ExcelUtility.writeExcel("src/test/java/ExcelResults/ScenarioStatus.xlsx", scenario, GWD.threadBrowserName.get(), date.format(formatter));
 
         if (scenario.isFailed()){
-            // klasöre
+
             TakesScreenshot screenshot = (TakesScreenshot) GWD.getDriver();
             File ekranDosyasi = screenshot.getScreenshotAs(OutputType.FILE);
 
-           ExtentTestManager.getTest().addScreenCaptureFromBase64String(getBase64Screenshot());
+//           ExtentTestManager.getTest().addScreenCaptureFromBase64String(getBase64Screenshot());
 
             try {
                 FileUtils.copyFile(ekranDosyasi,

@@ -5,6 +5,7 @@ Feature: Attestations Functionality
     When Enter username and password and click login button
     Then User should login successfully
 
+
   Scenario: Add new Attestations
     And Click on the element in the Left Nav
       | humanResources |
@@ -17,6 +18,7 @@ Feature: Attestations Functionality
     And Click on the element in Dialog Content
       | saveButton |
     Then Success message should be displayed
+
 
   Scenario: Edit Exist Attestation
     And Click on the element in the Left Nav
@@ -33,6 +35,7 @@ Feature: Attestations Functionality
     And Click on the element in Dialog Content
       | saveButton |
     Then Success message should be displayed
+
 
   Scenario: Delete Exist Attestation
     And Click on the element in the Left Nav

@@ -5,6 +5,7 @@ Feature: Grade Levels Functionality
     When Enter username and password and click login button
     Then User should login successfully
 
+
   Scenario Outline: Create Grade Level
     And Click on the element in the Left Nav
       | setupOne    |
@@ -32,6 +33,7 @@ Feature: Grade Levels Functionality
     Examples:
       | NameInput | ShortName | Order | NextGrade |
       | Ciaro     | CRO       | 15    | none      |
+
 
   Scenario Outline: Edit Grade Level
 
@@ -62,6 +64,7 @@ Feature: Grade Levels Functionality
       | NameInput | ShortName | Order | NextGrade |
       | Ciaro3    | CRO3      | 12    | none      |
 
+
   Scenario: Delete Grade Level
     And Click on the element in the Left Nav
       | setupOne    |
@@ -74,4 +77,4 @@ Feature: Grade Levels Functionality
 
     Then Success message should be displayed
 
-  Scenario Outline: Delete Subject Categories
+

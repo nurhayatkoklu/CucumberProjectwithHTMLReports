@@ -5,6 +5,7 @@ Feature: BankAccount Functionality
     When Enter username and password and click login button
     Then User should login successfully
 
+
   Scenario: Add bankAccount
     And Click on the element in the Left Nav
       | setupOne |
@@ -22,6 +23,7 @@ Feature: BankAccount Functionality
       | saveButton|
 
     Then Success message should be displayed
+
 
   Scenario: Edit bankAccount
     And Click on the element in the Left Nav
@@ -42,6 +44,7 @@ Feature: BankAccount Functionality
 
     Then Success message should be displayed
 
+
   Scenario: Delete bankAccount
     And Click on the element in the Left Nav
       | setupOne |
@@ -53,3 +56,5 @@ Feature: BankAccount Functionality
       | searchButton|
       | deleteButton|
       | deleteDialogButton|
+
+    Then Success message should be displayed
