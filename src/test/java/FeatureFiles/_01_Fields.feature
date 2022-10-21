@@ -1,4 +1,4 @@
-Feature: Grade Levels Functionality
+Feature: Fields Functionality
 
   Background:
     Given Navigate to basqar
@@ -6,19 +6,20 @@ Feature: Grade Levels Functionality
     Then User should login successfully
 
 
-  Scenario Outline: Create Subject Categories
+
+  Scenario Outline: Create Fields
+
     And Click on the element in the Left Nav
-      | education         |
-      | setupFour         |
-      | subjectCategories |
+      | setupOne   |
+      | parameters |
+      | fields     |
 
     And Click on the element in Dialog Content
-      | addButton |
+      | fieldsAddButton |
 
     And User sending the keys in Dialog Content
-
-      | nameInput | <NameInput> |
-      | code      | <Code>      |
+      | nameInput       | <nameInput>       |
+      | integrationCode | <integrationCode> |
 
     And Click on the element in Dialog Content
       | saveButton |
@@ -26,15 +27,20 @@ Feature: Grade Levels Functionality
     Then Success message should be displayed
 
     Examples:
-      | NameInput | Code      |
-      | oguz1256  | grup14316 |
+      | nameInput     | integrationCode |
+      | Stevee Jobsss | CEO11           |
 
 
-  Scenario Outline: Edit Subject Categories
+    Scenario Outline: Edit Fields
     And Click on the element in the Left Nav
-      | education         |
-      | setupFour         |
-      | subjectCategories |
+      | setupOne   |
+      | parameters |
+
+    And Scroll down the Left Nav
+
+    And Click on the element in Dialog Content
+
+      | fields     |
 
     And User sending the keys in Dialog Content
       | fieldSearch | <fieldSearch> |
@@ -42,37 +48,38 @@ Feature: Grade Levels Functionality
     And Click on the element in Dialog Content
       | searchButton |
       | editButton   |
-    And User sending the keys in Dialog Content
 
-      | nameInput | <NameInput> |
-      | code      | <Code>      |
+    And User sending the keys in Dialog Content
+      | nameInput       | <nameInput>       |
+      | integrationCode | <integrationCode> |
 
     And Click on the element in Dialog Content
       | saveButton |
 
     Then Success message should be displayed
-
-
     Examples:
-      | fieldSearch | NameInput | Code        |
-      | oguz1256    | oguzh4337 | grups12ffaj |
+      | fieldSearch | nameInput        | integrationCode |
+      | Stevee      | Stevee Jobsss111 | CEO1231         |
 
 
-  Scenario Outline: Delete Subject Categories
+  Scenario Outline: Delete Fields
+
     And Click on the element in the Left Nav
-      | education         |
-      | setupFour         |
-      | subjectCategories |
+      | setupOne   |
+      | parameters |
+      | fields     |
 
     And User sending the keys in Dialog Content
-      | nameSearch | <nameSearch> |
+      | fieldSearch | <fieldSearch> |
 
     And Click on the element in Dialog Content
       | searchButton       |
-      | deleteFieldButton  |
+      | deleteButton       |
       | deleteDialogButton |
+
     Then Success message should be displayed
 
     Examples:
-      | nameSearch |
-      | oguzh4337  |
+      | fieldSearch |
+      | Jobsss111   |
+

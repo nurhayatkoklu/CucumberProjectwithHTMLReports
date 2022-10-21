@@ -1,4 +1,4 @@
-Feature: Fields Functionality
+Feature: Subject Categories Functionality
 
   Background:
     Given Navigate to basqar
@@ -6,20 +6,19 @@ Feature: Fields Functionality
     Then User should login successfully
 
 
-
-  Scenario Outline: Create Fields
-
+  Scenario Outline: Create Subject Categories
     And Click on the element in the Left Nav
-      | setupOne   |
-      | parameters |
-      | fields     |
+      | education         |
+      | setupFour         |
+      | subjectCategories |
 
     And Click on the element in Dialog Content
-      | fieldsAddButton |
+      | addButton |
 
     And User sending the keys in Dialog Content
-      | nameInput       | <nameInput>       |
-      | integrationCode | <integrationCode> |
+
+      | nameInput | <NameInput> |
+      | code      | <Code>      |
 
     And Click on the element in Dialog Content
       | saveButton |
@@ -27,15 +26,15 @@ Feature: Fields Functionality
     Then Success message should be displayed
 
     Examples:
-      | nameInput     | integrationCode |
-      | Stevee Jobsss | CEO11           |
+      | NameInput | Code      |
+      | oguz1256  | grup14316 |
 
 
-    Scenario Outline: Edit Fields
+  Scenario Outline: Edit Subject Categories
     And Click on the element in the Left Nav
-      | setupOne   |
-      | parameters |
-      | fields     |
+      | education         |
+      | setupFour         |
+      | subjectCategories |
 
     And User sending the keys in Dialog Content
       | fieldSearch | <fieldSearch> |
@@ -43,38 +42,37 @@ Feature: Fields Functionality
     And Click on the element in Dialog Content
       | searchButton |
       | editButton   |
-
     And User sending the keys in Dialog Content
-      | nameInput       | <nameInput>       |
-      | integrationCode | <integrationCode> |
+
+      | nameInput | <NameInput> |
+      | code      | <Code>      |
 
     And Click on the element in Dialog Content
       | saveButton |
 
     Then Success message should be displayed
+
+
     Examples:
-      | fieldSearch | nameInput        | integrationCode |
-      | Stevee      | Stevee Jobsss111 | CEO1231         |
+      | fieldSearch | NameInput | Code        |
+      | oguz1256    | oguzh4337 | grups12ffaj |
 
 
-  Scenario Outline: Delete Fields
-
+  Scenario Outline: Delete Subject Categories
     And Click on the element in the Left Nav
-      | setupOne   |
-      | parameters |
-      | fields     |
+      | education         |
+      | setupFour         |
+      | subjectCategories |
 
     And User sending the keys in Dialog Content
-      | fieldSearch | <fieldSearch> |
+      | nameSearch | <nameSearch> |
 
     And Click on the element in Dialog Content
       | searchButton       |
-      | deleteButton       |
+      | deleteFieldButton  |
       | deleteDialogButton |
-
     Then Success message should be displayed
 
     Examples:
-      | fieldSearch |
-      | Jobsss111   |
-
+      | nameSearch |
+      | oguzh4337  |

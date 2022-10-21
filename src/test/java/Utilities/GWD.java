@@ -22,6 +22,10 @@ public class GWD {
 
 
     public static WebDriver getDriver() {
+
+     //  Locale.setDefault( new Locale("EN"));
+     //  System.setProperty("user.language","EN");
+
         if (driver == null) {
             Logger.getLogger("").setLevel(Level.SEVERE);
             System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
