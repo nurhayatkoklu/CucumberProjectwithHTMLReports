@@ -1,0 +1,335 @@
+# Created at 2022-09-18T18:01:56.940
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:390)
+	at java.lang.Thread.run(Thread.java:750)
+
+
+# Created at 2022-09-18T18:02:05.100
+Unexpected IOException with stream:   [31mWhen [0m[31mEnter username and password and click login button[0m [90m# StepDefinitions._01_LoginSteps.enterUsernameAndPasswordAndClickLoginButton()[0m
+      [31morg.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-1BH6ROD', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0f48f0f0c1f29fe93f2d26db04dc07c, findElement {using=xpath, value=(//button[@class='consent-give'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Nurhayat\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62941/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0f48f0f0c1f29fe93f2d26db04dc07c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at Pages.Parent.waitUntilClickable(Parent.java:42)
+	at Pages.Parent.clickFunction(Parent.java:35)
+	at Pages.DialogContent.findAndClick(DialogContent.java:194)
+	at StepDefinitions._01_LoginSteps.enterUsernameAndPasswordAndClickLoginButton(_01_LoginSteps.java:24)
+	at âœ½.Enter username and password and click login button(file:///C:/Users/Nurhayat/Downloads/Grup15StajProjesi/src/test/java/FeatureFiles/GRP1_01_Emrah.feature:5)
+[0m
+
+
+# Created at 2022-09-18T18:02:05.104
+Unexpected IOException with stream:   [36mThen [0m[36mUser should login successfully[0m                     [90m# StepDefinitions._01_LoginSteps.userShouldLoginSuccessfully()[0m
+
+
+# Created at 2022-09-18T18:02:05.106
+Unexpected IOException with stream:   [36mAnd [0m[36mClick on the element in the Left Nav[0m                [90m# StepDefinitions._05_DatatableSteps.clickOnTheElementInTheLeftNav(io.cucumber.datatable.DataTable)[0m
+    | humanResources |
+    | setupThree     |
+    | positions      |
+
+
+# Created at 2022-09-18T18:02:05.109
+Unexpected IOException with stream:   [36mAnd [0m[36mUser sending the keys in Dialog Content[0m             [90m# StepDefinitions._05_DatatableSteps.userSendingTheKeysInDialogContent(io.cucumber.datatable.DataTable)[0m
+    | nameSearch | Emrah |
+
+
+# Created at 2022-09-18T18:02:05.113
+Unexpected IOException with stream:   [36mAnd [0m[36mClick on the element in Dialog Content[0m              [90m# StepDefinitions._05_DatatableSteps.clickOnTheElementInDialogContent(io.cucumber.datatable.DataTable)[0m
+    | searchButton |
+    | editButton   |
+
+
+# Created at 2022-09-18T18:02:05.115
+Unexpected IOException with stream:   [36mAnd [0m[36mUser sending the keys in Dialog Content[0m             [90m# StepDefinitions._05_DatatableSteps.userSendingTheKeysInDialogContent(io.cucumber.datatable.DataTable)[0m
+    | nameInput | Emrah1   |
+    | shortName | test1234 |
+
+
+# Created at 2022-09-18T18:02:05.117
+Unexpected IOException with stream:   [36mAnd [0m[36mClick on the element in Dialog Content[0m              [90m# StepDefinitions._05_DatatableSteps.clickOnTheElementInDialogContent(io.cucumber.datatable.DataTable)[0m
+    | saveButton |
+
+
+# Created at 2022-09-18T18:02:05.119
+Unexpected IOException with stream:   [36mThen [0m[36mSuccess message should be displayed[0m                [90m# StepDefinitions.messageAssert.successMessageShouldBeDisplayed()[0m
+
+
+# Created at 2022-09-18T18:02:05.121
+Unexpected IOException with stream: Senaryo Bitti
+
+
+# Created at 2022-09-18T18:02:05.123
+Unexpected IOException with stream: scenario sonucu=FAILED
+
+
+# Created at 2022-09-18T18:02:05.124
+Unexpected IOException with stream: scenario isFailed ?=true
+
+
+# Created at 2022-09-18T18:02:11.849
+Unexpected IOException with stream:       [31morg.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-1BH6ROD', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0f48f0f0c1f29fe93f2d26db04dc07c, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Nurhayat\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62941/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0f48f0f0c1f29fe93f2d26db04dc07c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at StepDefinitions.Hooks.after(Hooks.java:42)
+[0m
+
+
+# Created at 2022-09-18T18:02:11.855
+Unexpected IOException: 8,1,Runners.TestRunner_MasterReport,runScenario(Runners.TestRunner_MasterReport),null,chrome not reachable\000A  (Session info: chrome=105.0.5195.127)\000ABuild info: version: '4.3.0'\002C revision: 'a4995e2c09*'\000ASystem info: host: 'DESKTOP-1BH6ROD'\002C ip: '192.168.1.33'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_331'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [d0f48f0f0c1f29fe93f2d26db04dc07c\002C findElement {using=xpath\002C value=(//button[@class='consent-give'])[1]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 105.0.5195.127\002C chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883...\002C userDataDir: C:\005CUsers\005CNurhayat\005CAppData\005CL...}\002C goog:chromeOptions: {debuggerAddress: localhost:62941}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:62941/devtoo...\002C se:cdpVersion: 105.0.5195.127\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: d0f48f0f0c1f29fe93f2d26db04dc07c,null,chrome not reachable\000A  (Session info: chrome=105.0.5195.127)\000ABuild info: version: '4.3.0'\002C revision: 'a4995e2c09*'\000ASystem info: host: 'DESKTOP-1BH6ROD'\002C ip: '192.168.1.33'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_331'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [d0f48f0f0c1f29fe93f2d26db04dc07c\002C findElement {using=xpath\002C value=(//button[@class='consent-give'])[1]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 105.0.5195.127\002C chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883...\002C userDataDir: C:\005CUsers\005CNurhayat\005CAppData\005CL...}\002C goog:chromeOptions: {debuggerAddress: localhost:62941}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:62941/devtoo...\002C se:cdpVersion: 105.0.5195.127\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: d0f48f0f0c1f29fe93f2d26db04dc07c,TestRunner_MasterReport.runScenario \00BB WebDriver chrome not reachable\000A  (Sessio...,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=105.0.5195.127)\000ABuild info: version: '4.3.0'\002C revision: 'a4995e2c09*'\000ASystem info: host: 'DESKTOP-1BH6ROD'\002C ip: '192.168.1.33'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_331'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [d0f48f0f0c1f29fe93f2d26db04dc07c\002C findElement {using=xpath\002C value=(//button[@class='consent-give'])[1]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 105.0.5195.127\002C chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883...\002C userDataDir: C:\005CUsers\005CNurhayat\005CAppData\005CL...}\002C goog:chromeOptions: {debuggerAddress: localhost:62941}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:62941/devtoo...\002C se:cdpVersion: 105.0.5195.127\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: d0f48f0f0c1f29fe93f2d26db04dc07c\000A
+
+
+# Created at 2022-09-18T18:02:11.857
+Unexpected IOException: 5,1,Runners.TestRunner_MasterReport,runScenario(Runners.TestRunner_MasterReport),cucumber,null,null
+
+
+# Created at 2022-09-18T18:02:11.896
+Unexpected IOException with stream: 
+@MasterReport
+Scenario: Delete Exist Position                           [90m# src/test/java/FeatureFiles/GRP1_01_Emrah.feature:45[0m
+
+
+# Created at 2022-09-18T18:02:11.903
+Unexpected IOException with stream: Senaryo ba?lad?
+
+
+# Created at 2022-09-18T18:02:23.290
+Unexpected IOException with stream:   [31mGiven [0m[31mNavigate to basqar[0m                                [90m# StepDefinitions._01_LoginSteps.navigateToBasqar()[0m
+      [31morg.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-1BH6ROD', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0f48f0f0c1f29fe93f2d26db04dc07c, get {url=https://demo.mersys.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Nurhayat\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62941/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0f48f0f0c1f29fe93f2d26db04dc07c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
+	at StepDefinitions._01_LoginSteps.navigateToBasqar(_01_LoginSteps.java:14)
+	at âœ½.Navigate to basqar(file:///C:/Users/Nurhayat/Downloads/Grup15StajProjesi/src/test/java/FeatureFiles/GRP1_01_Emrah.feature:4)
+[0m
+
+
+# Created at 2022-09-18T18:02:23.293
+Unexpected IOException with stream:   [36mWhen [0m[36mEnter username and password and click login button[0m [90m# StepDefinitions._01_LoginSteps.enterUsernameAndPasswordAndClickLoginButton()[0m
+
+
+# Created at 2022-09-18T18:02:23.294
+Unexpected IOException with stream:   [36mThen [0m[36mUser should login successfully[0m                     [90m# StepDefinitions._01_LoginSteps.userShouldLoginSuccessfully()[0m
+
+
+# Created at 2022-09-18T18:02:23.300
+Unexpected IOException with stream:   [36mAnd [0m[36mClick on the element in the Left Nav[0m                [90m# StepDefinitions._05_DatatableSteps.clickOnTheElementInTheLeftNav(io.cucumber.datatable.DataTable)[0m
+    | humanResources |
+    | setupThree     |
+    | positions      |
+
+
+# Created at 2022-09-18T18:02:23.302
+Unexpected IOException with stream:   [36mAnd [0m[36mUser sending the keys in Dialog Content[0m             [90m# StepDefinitions._05_DatatableSteps.userSendingTheKeysInDialogContent(io.cucumber.datatable.DataTable)[0m
+    | nameSearch | Emrah1 |
+
+
+# Created at 2022-09-18T18:02:23.304
+Unexpected IOException with stream:   [36mAnd [0m[36mClick on the element in Dialog Content[0m              [90m# StepDefinitions._05_DatatableSteps.clickOnTheElementInDialogContent(io.cucumber.datatable.DataTable)[0m
+    | searchButton       |
+    | deleteButton       |
+    | deleteDialogButton |
+
+
+# Created at 2022-09-18T18:02:23.306
+Unexpected IOException with stream:   [36mThen [0m[36mSuccess message should be displayed[0m                [90m# StepDefinitions.messageAssert.successMessageShouldBeDisplayed()[0m
+
+
+# Created at 2022-09-18T18:02:23.309
+Unexpected IOException with stream: Senaryo Bitti
+
+
+# Created at 2022-09-18T18:02:23.310
+Unexpected IOException with stream: scenario sonucu=FAILED
+
+
+# Created at 2022-09-18T18:02:23.314
+Unexpected IOException with stream: scenario isFailed ?=true
+
+
+# Created at 2022-09-18T18:02:34.055
+Unexpected IOException with stream:       [31morg.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-1BH6ROD', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0f48f0f0c1f29fe93f2d26db04dc07c, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Nurhayat\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62941/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0f48f0f0c1f29fe93f2d26db04dc07c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:353)
+	at StepDefinitions.Hooks.after(Hooks.java:42)
+[0m
+
+
+# Created at 2022-09-18T18:02:34.058
+Unexpected IOException: 8,1,Runners.TestRunner_MasterReport,runScenario(Runners.TestRunner_MasterReport),null,chrome not reachable\000A  (Session info: chrome=105.0.5195.127)\000ABuild info: version: '4.3.0'\002C revision: 'a4995e2c09*'\000ASystem info: host: 'DESKTOP-1BH6ROD'\002C ip: '192.168.1.33'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_331'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [d0f48f0f0c1f29fe93f2d26db04dc07c\002C get {url=https://demo.mersys.io/}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 105.0.5195.127\002C chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883...\002C userDataDir: C:\005CUsers\005CNurhayat\005CAppData\005CL...}\002C goog:chromeOptions: {debuggerAddress: localhost:62941}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:62941/devtoo...\002C se:cdpVersion: 105.0.5195.127\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: d0f48f0f0c1f29fe93f2d26db04dc07c,null,chrome not reachable\000A  (Session info: chrome=105.0.5195.127)\000ABuild info: version: '4.3.0'\002C revision: 'a4995e2c09*'\000ASystem info: host: 'DESKTOP-1BH6ROD'\002C ip: '192.168.1.33'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_331'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [d0f48f0f0c1f29fe93f2d26db04dc07c\002C get {url=https://demo.mersys.io/}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 105.0.5195.127\002C chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883...\002C userDataDir: C:\005CUsers\005CNurhayat\005CAppData\005CL...}\002C goog:chromeOptions: {debuggerAddress: localhost:62941}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:62941/devtoo...\002C se:cdpVersion: 105.0.5195.127\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: d0f48f0f0c1f29fe93f2d26db04dc07c,TestRunner_MasterReport.runScenario \00BB WebDriver chrome not reachable\000A  (Sessio...,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=105.0.5195.127)\000ABuild info: version: '4.3.0'\002C revision: 'a4995e2c09*'\000ASystem info: host: 'DESKTOP-1BH6ROD'\002C ip: '192.168.1.33'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_331'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [d0f48f0f0c1f29fe93f2d26db04dc07c\002C get {url=https://demo.mersys.io/}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 105.0.5195.127\002C chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883...\002C userDataDir: C:\005CUsers\005CNurhayat\005CAppData\005CL...}\002C goog:chromeOptions: {debuggerAddress: localhost:62941}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:62941/devtoo...\002C se:cdpVersion: 105.0.5195.127\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: d0f48f0f0c1f29fe93f2d26db04dc07c\000A
+
+
+# Created at 2022-09-18T18:02:34.059
+Unexpected IOException: 5,1,Runners.TestRunner_MasterReport,runScenario(Runners.TestRunner_MasterReport),cucumber,null,null
+
+
+# Created at 2022-09-18T18:02:34.086
+Unexpected IOException with stream: 
+@MasterReport
+Scenario: Add new Location                                [90m# src/test/java/FeatureFiles/GRP1_07_Kadir.feature:9[0m
+
+
+# Created at 2022-09-18T18:02:34.087
+Unexpected IOException with stream: Senaryo ba?lad?
+
+
+# Created at 2022-09-18T18:02:44.474
+Unexpected IOException with stream:   [31mGiven [0m[31mNavigate to basqar[0m                                [90m# StepDefinitions._01_LoginSteps.navigateToBasqar()[0m
+      [31morg.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=105.0.5195.127)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-1BH6ROD', ip: '192.168.1.33', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0f48f0f0c1f29fe93f2d26db04dc07c, get {url=https://demo.mersys.io/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\Nurhayat\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62941/devtoo..., se:cdpVersion: 105.0.5195.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d0f48f0f0c1f29fe93f2d26db04dc07c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
+	at StepDefinitions._01_LoginSteps.navigateToBasqar(_01_LoginSteps.java:14)
+	at âœ½.Navigate to basqar(file:///C:/Users/Nurhayat/Downloads/Grup15StajProjesi/src/test/java/FeatureFiles/GRP1_07_Kadir.feature:4)
+[0m
+
+
+# Created at 2022-09-18T18:02:44.480
+Unexpected IOException with stream:   [36mWhen [0m[36mEnter username and password and click login button[0m [90m# StepDefinitions._01_LoginSteps.enterUsernameAndPasswordAndClickLoginButton()[0m
+
+
+# Created at 2022-09-18T18:02:44.482
+Unexpected IOException with stream:   [36mThen [0m[36mUser should login successfully[0m                     [90m# StepDefinitions._01_LoginSteps.userShouldLoginSuccessfully()[0m
+
+
+# Created at 2022-09-18T18:02:44.484
+Unexpected IOException with stream:   [36mAnd [0m[36mClick on the element in the Left Nav[0m                [90m# StepDefinitions._05_DatatableSteps.clickOnTheElementInTheLeftNav(io.cucumber.datatable.DataTable)[0m
+    | setupOne    |
+    | schoolSetup |
+    | departments |
+
+
+# Created at 2022-09-18T18:02:44.488
+Unexpected IOException with stream:   [36mAnd [0m[36mClick on the element in Dialog Content[0m              [90m# StepDefinitions._05_DatatableSteps.clickOnTheElementInDialogContent(io.cucumber.datatable.DataTable)[0m
+    | addButton |
+
+
+# Created at 2022-09-18T18:02:44.491
+Unexpected IOException with stream:   [36mAnd [0m[36mUser sending the keys in Dialog Content[0m             [90m# StepDefinitions._05_DatatableSteps.userSendingTheKeysInDialogContent(io.cucumber.datatable.DataTable)[0m
+    | nameInput | Kadirov |
+    | code      | 065     |
+
+
+# Created at 2022-09-18T18:02:44.496
+Unexpected IOException with stream:   [36mAnd [0m[36mClick on the element in Dialog Content[0m              [90m# StepDefinitions._05_DatatableSteps.clickOnTheElementInDialogContent(io.cucumber.datatable.DataTable)[0m
+    | saveButton |
+
+
+# Created at 2022-09-18T18:02:44.498
+Unexpected IOException with stream:   [36mThen [0m[36mSuccess message should be displayed[0m                [90m# StepDefinitions.messageAssert.successMessageShouldBeDisplayed()[0m
+
+
+# Created at 2022-09-18T18:02:44.506
+Unexpected IOException with stream: Senaryo Bitti
+
+
+# Created at 2022-09-18T18:02:44.509
+Unexpected IOException with stream: scenario sonucu=FAILED
+
+
+# Created at 2022-09-18T18:02:44.512
+Unexpected IOException with stream: scenario isFailed ?=true
+
+

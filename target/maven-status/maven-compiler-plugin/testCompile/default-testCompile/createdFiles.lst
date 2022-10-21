@@ -1,0 +1,12 @@
+Runners\TestRunner_ExtentReport.class
+Runners\TestRunner_MasterReport.class
+Pages\Parent.class
+Utilities\ExcelUtility.class
+Utilities\GWD.class
+Pages\LeftNav.class
+StepDefinitions\_05_DatatableSteps.class
+StepDefinitions\Hooks.class
+StepDefinitions\BlankAreaSteps.class
+Pages\DialogContent.class
+StepDefinitions\_01_LoginSteps.class
+StepDefinitions\messageAssert.class
